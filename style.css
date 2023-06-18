@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
+
+.labels {
+    color: white;
+    display: inline-block;
+    flex-direction: row;
+    width: fit-content;
+    background-color: red;
+}
+
+.labels label {
+    width: fit-content;
+    color: #000000;
+    background-color: wheat;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    position: absolute;
+    float: inline-start;
+}
+
+header {
+    background-color: #8f8278;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+
+}
+
+.main_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+    width: 100%;
+    height: auto;
+
+}
+
+.first_container {
+
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+
+}
+
+.second_container {
+    width: 100vw;
+    height: auto;
+    color: #ffffff;
+    border: 1px soli white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.total_call_oi,
+.total_put_oi,
+.Total_call_oi_change,
+.Total_put_oi_change,
+.total_call_his_change_minus,
+.total_put_his_change_minus {
+    background-color: rgb(108, 34, 192);
+    text-align: center;
+    padding: 5px;
+    min-width: fit-content;
+    height: min-content;
+    font-size: 15px;
+}
+
+label {
+    text-align: center;
+    padding: 5px;
+    min-width: 100px;
+    height: min-content;
+}
+
+#div_align_con_horizontal {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.con_lower_items,
+.con_upper_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ceoi,
+.peoi,
+.nifty,
+.time,
+.exDate,
+.currPrice,
+.status,
+.timer_label,
+.timer {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.cechoi,
+.ceoi,
+.peoi,
+.pechoi,
+.cbid,
+.cask,
+.pbid,
+.pask,
+.pltp,
+.cltp,
+span {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    background: #000000;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    min-width: fit-content;
+
+
+}
+
+.strikeprice {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    background: #000000;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    min-width: fit-content;
+
+}
+
+span {
+    text-decoration: dotted;
+}
+
+.nifty,
+.exDate,
+.time,
+.currPrice {
+    background-color: rgb(155, 34, 192);
+    border-radius: 5px;
+
+}
+
+.con_1,
+.con_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    height: min-content;
+    margin: 2px;
+    border: 1px solid green;
+    padding: 2px;
+}
+
+.con_upper_items {
+    display: flex;
+    flex-direction: column;
+}
+
+.con_upper_items span,
+.con_upper_items div {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1000px) {
+    .main_container {
+        flex-direction: row;
+    }
+
+    .con_upper_items {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.call_history,
+.put_history {
+    font-size: 15px;
+    border: 1px solid green;
+    background-color: #9b22c0;
+    padding: 5px;
+    color: rgb(248, 248, 229);
+}
+
+.history_oi {
+    display: flex;
+    flex-direction: row;
+}
+
+.history_oi div {
+    display: flex;
+    flex-direction: column;
+    
+    width: auto;
+}
+
+.con5 {
+
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin: 5px;
+}
+
+.con6 {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: white;
+    margin: 5px;
+    
+}
+
+.con6 canvas ,#chart_diff_value{
+    
+    max-width: 600px;
+    height: 300px;
+    background-color: #38382ead;
+    color: white;
+    margin: 10px;
+}
+
+.con5 label,
+.con5 span, 
+.call_rate,
+.put_rate
+{
+    background-color: #9b22c0;
+}
+
+.call_put_symbol {
+    width: fit-content;
+    height: auto;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 200;
+    padding: 2px;
+
+}
+
+
+
+footer {
+    background-color: #000000;
+    color: rgb(138, 129, 129);
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+}
+.diff_con{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+
+}

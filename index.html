@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option Chain Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="status_con">
+            <div class="status"></div><label for="" class="timer_label">page will be refresh in
+            </label><label class="timer"></label>
+        </div>
+        <div class="con_upper_items">
+            <span><i><B>Symbol :</B></i>-</span>
+            <div class="nifty"></div>
+            <span><i><b>Date & Time</b></i> :-</span>
+            <div class="time"></div>
+            <span><i><b>Expiry Date :-</b></i> :-</span>
+            <div class="exDate"></div>
+            <span><i><b>Current Price :-</b></i></span>
+            <div class="currPrice"></div>
+        </div>
+
+    </header>
+    <br>
+
+    <hr>
+    <marquee behavior="scroll" direction="left" style="color: rgb(37, 226, 12); font-weight: bold;">NIFTY OPTION CHAIN
+        REAL TIME DATA</marquee>
+    <br>
+
+    <div class="main_container">
+
+        <div class="first_container">
+
+
+
+
+
+            <div id="div_align_con_horizontal">
+
+
+
+
+
+
+
+                <div class="con_lower_items">
+                    <div class="strikeprice">
+                        <div class="strikeprice">strike Price</div>
+                        <div class="sp"></div>
+                    </div>
+
+                    <div class="ceoi">
+                        <div class="ceoi"> call O.I</div>
+                        <div class="ce"></div>
+                    </div>
+                    <div class="cltp">
+                        <div class="cltp"> call LTP</div>
+                        <div class="cltplist"></div>
+                    </div>
+                    <div class="cechoi">
+                        <div class="cechoi"> call chng O.I</div>
+                        <div class="cech"></div>
+                    </div>
+
+                    <div class="peoi">
+                        <div class="peoi"> put O.I</div>
+                        <div class="pe"></div>
+                    </div>
+                    <div class="pltp">
+                        <div class="pltp"> put LTP </div>
+                        <div class="pltplist"></div>
+                    </div>
+                    <div class="pechoi">
+                        <div class="pechoi"> put chng O.I</div>
+                        <div class="pech"></div>
+                    </div>
+                    <div class="cbid">
+                        <div class="cbid"> call bid</div>
+                        <div class="cbidlist"></div>
+                    </div>
+                    <div class="cask">
+                        <div class="cask"> call ask</div>
+                        <div class="casklist"></div>
+                    </div>
+                    <div class="pbid">
+                        <div class="pbid"> put bid</div>
+                        <div class="pbidlist"></div>
+                    </div>
+                    <div class="pask">
+                        <div class="pask"> put ask</div>
+                        <div class="pasklist"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="second_container">
+            <div class="con_1">
+                <label for="">Total Call O.I.</label>
+                <div class="total_call_oi"></div>
+                <label for="">Total put O.I.</label>
+                <div class="total_put_oi"></div>
+            </div>
+
+            <div class="con_2">
+                <label for="">Total Call O.I. Change</label>
+                <div class="Total_call_oi_change">0</div>
+                <label for="">Total put O.I. Change</label>
+                <div class="Total_put_oi_change">0</div>
+                <label for="pcrvalue"> PCR :-</label>
+                <label for="" class="pcrvalue"></label>
+            </div>
+
+
+            <div class="history_oi">
+                <div>
+                    <label for="call_history">History of call O.I. change</label>
+                    <div class="call_history"></div>
+                    <label for="put_history">History of put O.I. change</label>
+                    <div class="put_history"></div>
+                </div>
+                <div>
+                    <label for="total_call_his_change_minus">Total</label>
+                    <span class="total_call_his_change_minus"></span>
+                    <label for="" class="diff_oi_change_PCR"></label>
+                    <span class="total_put_his_change_minus"></span>
+                </div>
+                <div class="diff_con" style="display:flex; flex-direction:column;">
+                    <Label class="rate" for="call_rate">CALL RATE</Label>
+                    <span class="call_rate"></span>
+                    <Label class="rate" for="put_rate">PUT RATE</Label>
+                    <span class="put_rate"></span>
+                </div>
+            </div>
+            <div class="con5">
+                <label for="">Diffrance </label>
+                <span class="diff_value"></span>
+                <label for="" class="diff_symbol"></label>
+            </div>
+            <div class="call_put_symbol">
+
+            </div>
+            <canvas id="chart_diff_value"></canvas>
+        </div>
+    </div>
+    <div class="con6">
+        <canvas id="chart_pcr"></canvas>
+        <canvas id="chart"></canvas>
+        <canvas id="chart2"></canvas>
+        <canvas id="chart1"></canvas>
+        <canvas id="chart3"></canvas>
+        <canvas id="myChart2"></canvas>
+        <canvas id="myChart3"></canvas>
+        <canvas id="myChart1"></canvas>
+
+    </div>
+
+
+    <script src="script3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https
+</body>
+<footer>&copy; copywright vishal sharma all right reserved.</footer>
+
+</html>
